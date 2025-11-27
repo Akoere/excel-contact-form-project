@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
+
 <div class="form-container">
-<form id="contactForm">
     <h1>SAY WAGWAN</h1>
-    <p>Have a question or want to work together? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+    <p>Have a question or want to work together? We'd love to hear from you.</p>
+    
     <main>
-        <h2>Contact Us</h2>
-        <form action="/submit" method="post">
+        <form id="contactForm">
+            
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Your name" required>
 
@@ -24,13 +25,18 @@
             <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
 
             <button type="submit" id="submitBtn">Send Message</button>
-        
+            
+            <p id="status-message"></p>
+
         </form>
     </main>
+
     <footer>
         <p>&copy; 2025 ST.Akoere. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
 </div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
